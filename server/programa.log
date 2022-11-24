@@ -1,0 +1,1573 @@
+2022-11-23 12:32:37,536 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 12:40:54,350 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 12:46:21,270 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 12:56:21,827 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 13:56:47,106 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 13:56:53,091 - INFO - 172.25.0.1 [23/Nov/2022:13:56:53 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 13:58:01,509 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 13:58:06,028 - INFO - 172.25.0.1 [23/Nov/2022:13:58:06 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 13:58:07,946 - INFO - 172.25.0.1 [23/Nov/2022:13:58:07 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 13:58:09,498 - INFO - 172.25.0.1 [23/Nov/2022:13:58:09 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 13:58:10,899 - INFO - 172.25.0.1 [23/Nov/2022:13:58:10 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 13:58:12,010 - INFO - 172.25.0.1 [23/Nov/2022:13:58:12 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 14:04:38,600 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 14:05:00,088 - INFO - 172.25.0.1 [23/Nov/2022:14:05:00 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 14:05:32,543 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 14:57:28,943 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 14:57:50,260 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/forum_post_resource.py", line 13, in handle_intro
+    user.create()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6532, in create
+    inst.save(force_insert=True)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3250, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4130, in _connect
+    raise ImproperlyConfigured('MySQL driver not installed!')
+peewee.ImproperlyConfigured: MySQL driver not installed!
+2022-11-23 14:57:50,262 - INFO - 172.25.0.1 [23/Nov/2022:14:57:50 +0000] "GET / HTTP/1.1" 500 335 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:02:05,248 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/forum_post_resource.py", line 13, in handle_intro
+    user.create()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6532, in create
+    inst.save(force_insert=True)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3250, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4130, in _connect
+    raise ImproperlyConfigured('MySQL driver not installed!')
+peewee.ImproperlyConfigured: MySQL driver not installed!
+2022-11-23 15:02:05,249 - INFO - 172.25.0.1 [23/Nov/2022:15:02:05 +0000] "GET / HTTP/1.1" 500 335 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:04:07,151 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:04:17,586 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/usr/local/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '0.0.0.0' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3172, in connect
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+peewee.OperationalError: (2003, "Can't connect to MySQL server on '0.0.0.0' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/forum_post_resource.py", line 13, in handle_intro
+    user.create()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6532, in create
+    inst.save(force_insert=True)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3250, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3234, in execute_sql
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3172, in connect
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+peewee.OperationalError: (2003, "Can't connect to MySQL server on '0.0.0.0' ([Errno 111] Connection refused)")
+2022-11-23 15:04:17,588 - INFO - 172.25.0.1 [23/Nov/2022:15:04:17 +0000] "GET / HTTP/1.1" 500 335 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:05:39,802 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:05:44,444 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "/usr/local/lib/python3.10/socket.py", line 845, in create_connection
+    raise err
+  File "/usr/local/lib/python3.10/socket.py", line 833, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'db_poc' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3172, in connect
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+peewee.OperationalError: (2003, "Can't connect to MySQL server on 'db_poc' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/forum_post_resource.py", line 13, in handle_intro
+    user.create()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6532, in create
+    inst.save(force_insert=True)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3250, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3234, in execute_sql
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3235, in execute_sql
+    cursor = self.cursor(commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3219, in cursor
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3172, in connect
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3173, in connect
+    self._state.set_connection(self._connect())
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4131, in _connect
+    conn = mysql.connect(db=self.database, **self.connect_params)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 664, in connect
+    raise exc
+peewee.OperationalError: (2003, "Can't connect to MySQL server on 'db_poc' ([Errno 111] Connection refused)")
+2022-11-23 15:05:44,445 - INFO - 172.25.0.1 [23/Nov/2022:15:05:44 +0000] "GET / HTTP/1.1" 500 335 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:11:14,932 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:11:25,392 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3237, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'poc.user' doesn't exist")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/forum_post_resource.py", line 13, in handle_intro
+    user.create()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6532, in create
+    inst.save(force_insert=True)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3250, in execute
+    return self.execute_sql(sql, params, commit=commit)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3234, in execute_sql
+    with __exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3237, in execute_sql
+    cursor.execute(sql, params or ())
+  File "/usr/local/lib/python3.10/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.ProgrammingError: (1146, "Table 'poc.user' doesn't exist")
+2022-11-23 15:11:25,394 - INFO - 172.25.0.1 [23/Nov/2022:15:11:25 +0000] "GET / HTTP/1.1" 500 335 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:21:28,688 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:30:21,783 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:31:59,560 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:33:04,379 - INFO - 172.25.0.1 [23/Nov/2022:15:33:04 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:33:24,299 - INFO - 172.25.0.1 [23/Nov/2022:15:33:24 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:40:44,309 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:40:54,694 - INFO - 172.25.0.1 [23/Nov/2022:15:40:54 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:53:50,021 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:54:16,527 - INFO - 172.25.0.1 [23/Nov/2022:15:54:16 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 15:55:12,477 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 15:55:26,501 - INFO - 172.25.0.1 [23/Nov/2022:15:55:26 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 16:09:15,462 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 16:09:16,016 - INFO - 172.25.0.1 [23/Nov/2022:16:09:16 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:28:14,176 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:28:30,715 - INFO - 172.25.0.1 [23/Nov/2022:22:28:30 +0000] "GET / HTTP/1.1" 405 204 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:28:30,838 - INFO - 172.25.0.1 [23/Nov/2022:22:28:30 +0000] "GET /favicon.ico HTTP/1.1" 404 173 "http://localhost:8180/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:29:03,913 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:29:07,578 - INFO - 172.25.0.1 [23/Nov/2022:22:29:07 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:29:12,643 - INFO - 172.25.0.1 [23/Nov/2022:22:29:12 +0000] "POST /user HTTP/1.1" 200 170 "-" "insomnia/2021.5.3"
+2022-11-23 22:32:07,812 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:32:09,275 - INFO - 172.25.0.1 [23/Nov/2022:22:32:09 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:32:13,048 - INFO - 172.25.0.1 [23/Nov/2022:22:32:13 +0000] "POST /user HTTP/1.1" 200 170 "-" "insomnia/2021.5.3"
+2022-11-23 22:32:18,209 - INFO - 172.25.0.1 [23/Nov/2022:22:32:18 +0000] "POST /user HTTP/1.1" 200 170 "-" "insomnia/2021.5.3"
+2022-11-23 22:32:55,915 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:32:57,008 - INFO - 172.25.0.1 [23/Nov/2022:22:32:57 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:32:59,305 - INFO - 172.25.0.1 [23/Nov/2022:22:32:59 +0000] "POST /user HTTP/1.1" 200 170 "-" "insomnia/2021.5.3"
+2022-11-23 22:35:16,924 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:35:21,228 - INFO - 172.25.0.1 [23/Nov/2022:22:35:21 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:35:23,794 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 11, in create
+    web.json_response(data)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type MultiDictProxy is not JSON serializable
+2022-11-23 22:35:23,794 - INFO - 172.25.0.1 [23/Nov/2022:22:35:23 +0000] "POST /user HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 22:38:20,555 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:38:20,877 - INFO - 172.25.0.1 [23/Nov/2022:22:38:20 +0000] "GET / HTTP/1.1" 200 164 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+2022-11-23 22:38:24,288 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 10, in create
+    print(data['nome'])
+KeyError: 'nome'
+2022-11-23 22:38:24,288 - INFO - 172.25.0.1 [23/Nov/2022:22:38:24 +0000] "POST /user HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 22:40:04,071 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:40:05,639 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 11, in create
+    print(data['nome'])
+KeyError: 'nome'
+2022-11-23 22:40:05,639 - INFO - 172.25.0.1 [23/Nov/2022:22:40:05 +0000] "POST /user HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 22:42:05,280 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:44:05,868 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:45:35,969 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:45:37,440 - INFO - 172.25.0.1 [23/Nov/2022:22:45:37 +0000] "POST /user HTTP/1.1" 200 179 "-" "insomnia/2021.5.3"
+2022-11-23 22:56:25,587 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:56:59,972 - INFO - 172.25.0.1 [23/Nov/2022:22:56:59 +0000] "POST /user HTTP/1.1" 201 244 "-" "insomnia/2021.5.3"
+2022-11-23 22:57:27,813 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 20, in create
+    user = UserModel(name=name, email=email, password=password)
+UnboundLocalError: local variable 'password' referenced before assignment
+2022-11-23 22:57:27,814 - INFO - 172.25.0.1 [23/Nov/2022:22:57:27 +0000] "POST /user HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 22:58:30,167 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:58:44,297 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 17, in create
+    if not name or not email or not password:
+UnboundLocalError: local variable 'password' referenced before assignment
+2022-11-23 22:58:44,298 - INFO - 172.25.0.1 [23/Nov/2022:22:58:44 +0000] "POST /user HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 22:59:48,295 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 22:59:52,164 - INFO - 172.25.0.1 [23/Nov/2022:22:59:52 +0000] "POST /user HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-23 23:09:29,263 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:09:43,738 - INFO - 172.25.0.1 [23/Nov/2022:23:09:43 +0000] "POST /user HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-23 23:09:48,794 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/server_poc/src/resources/user.py", line 40, in login
+    user = User.get(
+AttributeError: type object 'User' has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 47, in login
+    except User.DoesNotExist:
+AttributeError: type object 'User' has no attribute 'DoesNotExist'
+2022-11-23 23:09:48,794 - INFO - 172.25.0.1 [23/Nov/2022:23:09:48 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:11:10,529 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:11:11,894 - INFO - 172.25.0.1 [23/Nov/2022:23:11:11 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-23 23:11:16,160 - INFO - 172.25.0.1 [23/Nov/2022:23:11:16 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-23 23:11:57,709 - INFO - 172.25.0.1 [23/Nov/2022:23:11:57 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-23 23:12:31,973 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:12:36,658 - INFO - 172.25.0.1 [23/Nov/2022:23:12:36 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-23 23:12:52,964 - INFO - 172.25.0.1 [23/Nov/2022:23:12:52 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-23 23:14:23,123 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:14:34,646 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 40, in login
+    user = User.get(
+AttributeError: type object 'User' has no attribute 'get'
+2022-11-23 23:14:34,647 - INFO - 172.25.0.1 [23/Nov/2022:23:14:34 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:15:55,172 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:16:09,997 - INFO - 172.25.0.1 [23/Nov/2022:23:16:09 +0000] "POST /login HTTP/1.1" 200 193 "-" "insomnia/2021.5.3"
+2022-11-23 23:23:33,103 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:29:02,143 - INFO - 172.25.0.1 [23/Nov/2022:23:29:02 +0000] "POST /login HTTP/1.1" 200 192 "-" "insomnia/2021.5.3"
+2022-11-23 23:33:38,543 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:33:45,795 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 45, in login
+    ).get().dicts()
+AttributeError: 'User' object has no attribute 'dicts'
+2022-11-23 23:33:45,796 - INFO - 172.25.0.1 [23/Nov/2022:23:33:45 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:38:55,859 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:39:08,209 - INFO - 172.25.0.1 [23/Nov/2022:23:39:08 +0000] "POST /login HTTP/1.1" 200 243 "-" "insomnia/2021.5.3"
+2022-11-23 23:40:25,747 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:40:57,792 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:41:03,779 - INFO - 172.25.0.1 [23/Nov/2022:23:41:03 +0000] "POST /login HTTP/1.1" 200 243 "-" "insomnia/2021.5.3"
+2022-11-23 23:41:04,827 - INFO - 172.25.0.1 [23/Nov/2022:23:41:04 +0000] "POST /login HTTP/1.1" 200 243 "-" "insomnia/2021.5.3"
+2022-11-23 23:41:34,989 - INFO - 172.25.0.1 [23/Nov/2022:23:41:34 +0000] "POST /login HTTP/1.1" 200 243 "-" "insomnia/2021.5.3"
+2022-11-23 23:41:35,656 - INFO - 172.25.0.1 [23/Nov/2022:23:41:35 +0000] "POST /login HTTP/1.1" 200 243 "-" "insomnia/2021.5.3"
+2022-11-23 23:45:14,377 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:45:14,553 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 41, in login
+    user = await UserModel.get(
+TypeError: object User can't be used in 'await' expression
+2022-11-23 23:45:14,554 - INFO - 172.25.0.1 [23/Nov/2022:23:45:14 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:45:16,060 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 41, in login
+    user = await UserModel.get(
+TypeError: object User can't be used in 'await' expression
+2022-11-23 23:45:16,060 - INFO - 172.25.0.1 [23/Nov/2022:23:45:16 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:54:04,803 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-23 23:54:07,622 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 41, in login
+    user = await UserModel.get(
+TypeError: object User can't be used in 'await' expression
+2022-11-23 23:54:07,623 - INFO - 172.25.0.1 [23/Nov/2022:23:54:07 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-23 23:55:08,075 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:07:41,196 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:07:48,410 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 41, in login
+    user = await UserModel.manege.get(UserModel, id=4)
+AttributeError: type object 'User' has no attribute 'manege'
+2022-11-24 00:07:48,411 - INFO - 172.25.0.1 [24/Nov/2022:00:07:48 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:09:25,054 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:09:26,090 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 41, in login
+    user = await UserModel.manege.get(UserModel, id=4)
+AttributeError: 'function' object has no attribute 'get'
+2022-11-24 00:09:26,091 - INFO - 172.25.0.1 [24/Nov/2022:00:09:26 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:10:45,634 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:10:53,207 - INFO - 172.25.0.1 [24/Nov/2022:00:10:53 +0000] "POST /login HTTP/1.1" 200 284 "-" "insomnia/2021.5.3"
+2022-11-24 00:16:40,903 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:17:43,573 - INFO - 172.25.0.1 [24/Nov/2022:00:17:43 +0000] "POST /login HTTP/1.1" 200 280 "-" "insomnia/2021.5.3"
+2022-11-24 00:17:52,084 - INFO - 172.25.0.1 [24/Nov/2022:00:17:52 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-24 00:17:56,137 - INFO - 172.25.0.1 [24/Nov/2022:00:17:56 +0000] "POST /login HTTP/1.1" 200 280 "-" "insomnia/2021.5.3"
+2022-11-24 00:19:31,214 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:23:01,812 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:23:12,848 - INFO - 172.25.0.1 [24/Nov/2022:00:23:12 +0000] "POST /login HTTP/1.1" 200 261 "-" "insomnia/2021.5.3"
+2022-11-24 00:30:29,825 - INFO - 172.25.0.1 [24/Nov/2022:00:30:29 +0000] "POST /post HTTP/1.1" 404 173 "-" "insomnia/2021.5.3"
+2022-11-24 00:31:04,016 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:31:05,264 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 9, in create
+    user_ip=request.META['REMOTE_ADDR']
+AttributeError: 'Request' object has no attribute 'META'
+2022-11-24 00:31:05,265 - INFO - 172.25.0.1 [24/Nov/2022:00:31:05 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:32:39,403 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:32:39,917 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 13, in create
+    return web.json_response({user_ip, user_agent, comment_type}, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:32:39,917 - INFO - 172.25.0.1 [24/Nov/2022:00:32:39 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:34:45,810 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:34:47,608 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 12, in create
+    return web.json_response({host}, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:34:47,609 - INFO - 172.25.0.1 [24/Nov/2022:00:34:47 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:36:26,544 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:36:27,078 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 13, in create
+    return web.json_response(json.dumps({host}), status=201)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:36:27,079 - INFO - 172.25.0.1 [24/Nov/2022:00:36:27 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:37:34,628 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:37:36,605 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 10, in create
+    host = await request.remote
+TypeError: object str can't be used in 'await' expression
+2022-11-24 00:37:36,606 - INFO - 172.25.0.1 [24/Nov/2022:00:37:36 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:39:27,020 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:39:28,625 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 10, in create
+    host = await request.remote
+TypeError: object str can't be used in 'await' expression
+2022-11-24 00:39:28,625 - INFO - 172.25.0.1 [24/Nov/2022:00:39:28 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:40:13,118 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:40:16,586 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 13, in create
+    return web.json_response({comment_type}, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:40:16,587 - INFO - 172.25.0.1 [24/Nov/2022:00:40:16 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:40:18,007 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 13, in create
+    return web.json_response({comment_type}, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:40:18,008 - INFO - 172.25.0.1 [24/Nov/2022:00:40:18 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:44:00,926 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:44:29,065 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 13, in create
+    return web.json_response(json.dumps({comment_type}), status=201)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+2022-11-24 00:44:29,065 - INFO - 172.25.0.1 [24/Nov/2022:00:44:29 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:46:26,437 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:46:36,228 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 11, in create
+    comment_type='contact-form'.decode("utf-8")
+AttributeError: 'str' object has no attribute 'decode'
+2022-11-24 00:46:36,228 - INFO - 172.25.0.1 [24/Nov/2022:00:46:36 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:46:37,374 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 11, in create
+    comment_type='contact-form'.decode("utf-8")
+AttributeError: 'str' object has no attribute 'decode'
+2022-11-24 00:46:37,374 - INFO - 172.25.0.1 [24/Nov/2022:00:46:37 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 00:51:23,816 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:54:00,363 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 00:54:16,843 - INFO - 172.25.0.1 [24/Nov/2022:00:54:16 +0000] "POST /post HTTP/1.1" 201 217 "-" "insomnia/2021.5.3"
+2022-11-24 01:03:53,168 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:03:57,058 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 20, in create
+    return web.json_response(data, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type CIMultiDictProxy is not JSON serializable
+2022-11-24 01:03:57,059 - INFO - 172.25.0.1 [24/Nov/2022:01:03:57 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:06:41,476 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:06:46,411 - INFO - 172.25.0.1 [24/Nov/2022:01:06:46 +0000] "POST /post HTTP/1.1" 201 252 "-" "insomnia/2021.5.3"
+2022-11-24 01:22:16,219 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:22:19,815 - INFO - 172.25.0.1 [24/Nov/2022:01:22:19 +0000] "POST /post HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 01:23:48,074 - INFO - 172.25.0.1 [24/Nov/2022:01:23:48 +0000] "POST /post HTTP/1.1" 201 252 "-" "insomnia/2021.5.3"
+2022-11-24 01:27:24,802 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:27:47,686 - INFO - 172.25.0.1 [24/Nov/2022:01:27:47 +0000] "POST /post HTTP/1.1" 201 252 "-" "insomnia/2021.5.3"
+2022-11-24 01:29:09,092 - INFO - 172.25.0.1 [24/Nov/2022:01:29:09 +0000] "POST /post HTTP/1.1" 201 252 "-" "insomnia/2021.5.3"
+2022-11-24 01:39:17,835 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:39:26,396 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = model_to_dict(posts)
+  File "/usr/local/lib/python3.10/site-packages/playhouse/shortcuts.py", line 74, in model_to_dict
+    for field in model._meta.sorted_fields:
+AttributeError: 'coroutine' object has no attribute '_meta'
+2022-11-24 01:39:26,397 - INFO - 172.25.0.1 [24/Nov/2022:01:39:26 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:42:30,611 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:42:32,808 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 42, in list
+    posts = list(PostModel.manege.execute(PostModel.select()).dicts())
+AttributeError: 'coroutine' object has no attribute 'dicts'
+2022-11-24 01:42:32,809 - INFO - 172.25.0.1 [24/Nov/2022:01:42:32 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:47:09,268 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:47:47,739 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:47:52,218 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 42, in list
+    posts = list(PostModel.manege.execute(PostModel.select().dicts()))
+TypeError: 'coroutine' object is not iterable
+2022-11-24 01:47:52,218 - INFO - 172.25.0.1 [24/Nov/2022:01:47:52 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:47:53,272 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 42, in list
+    posts = list(PostModel.manege.execute(PostModel.select().dicts()))
+TypeError: 'coroutine' object is not iterable
+2022-11-24 01:47:53,272 - INFO - 172.25.0.1 [24/Nov/2022:01:47:53 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:51:18,377 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:52:02,469 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 42, in list
+    posts = list(PostModel.manege.execute(PostModel.select().dicts()))
+TypeError: 'coroutine' object is not iterable
+2022-11-24 01:52:02,470 - INFO - 172.25.0.1 [24/Nov/2022:01:52:02 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:53:56,841 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:53:59,928 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:53:59,929 - INFO - 172.25.0.1 [24/Nov/2022:01:53:59 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:48,723 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:54:54,960 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:54,960 - INFO - 172.25.0.1 [24/Nov/2022:01:54:54 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:56,129 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:56,130 - INFO - 172.25.0.1 [24/Nov/2022:01:54:56 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:56,603 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:56,603 - INFO - 172.25.0.1 [24/Nov/2022:01:54:56 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:56,823 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:56,824 - INFO - 172.25.0.1 [24/Nov/2022:01:54:56 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:56,987 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:56,987 - INFO - 172.25.0.1 [24/Nov/2022:01:54:56 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:57,235 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:57,236 - INFO - 172.25.0.1 [24/Nov/2022:01:54:57 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:57,385 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:57,385 - INFO - 172.25.0.1 [24/Nov/2022:01:54:57 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:54:57,581 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in list
+    posts_dict = posts.dicts()
+AttributeError: 'AsyncQueryWrapper' object has no attribute 'dicts'
+2022-11-24 01:54:57,582 - INFO - 172.25.0.1 [24/Nov/2022:01:54:57 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:57:07,899 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 01:57:11,873 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 44, in list
+    return web.json_response(posts, status=200)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type datetime is not JSON serializable
+2022-11-24 01:57:11,874 - INFO - 172.25.0.1 [24/Nov/2022:01:57:11 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 01:57:13,630 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 44, in list
+    return web.json_response(posts, status=200)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type datetime is not JSON serializable
+2022-11-24 01:57:13,630 - INFO - 172.25.0.1 [24/Nov/2022:01:57:13 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:07:53,908 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:08:16,766 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 45, in list
+    return web.json_response(posts, dumps=JsonSerializerHelper, status=200)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+TypeError: JSONEncoder.__init__() takes 1 positional argument but 2 were given
+2022-11-24 02:08:16,767 - INFO - 172.25.0.1 [24/Nov/2022:02:08:16 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:10:50,824 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:10:56,396 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.json_response(posts, dumps=json.dumps(cls=JsonSerializerHelper), status=200)
+TypeError: dumps() missing 1 required positional argument: 'obj'
+2022-11-24 02:10:56,397 - INFO - 172.25.0.1 [24/Nov/2022:02:10:56 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:12:17,078 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:12:23,433 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.response(text=json.dumps(posts, cls=JsonSerializerHelper),
+AttributeError: module 'aiohttp.web' has no attribute 'response'
+2022-11-24 02:12:23,434 - INFO - 172.25.0.1 [24/Nov/2022:02:12:23 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:12:25,325 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.response(text=json.dumps(posts, cls=JsonSerializerHelper),
+AttributeError: module 'aiohttp.web' has no attribute 'response'
+2022-11-24 02:12:25,325 - INFO - 172.25.0.1 [24/Nov/2022:02:12:25 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:13:26,932 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:13:38,675 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.Response(text=json.dumps(posts, cls=JsonSerializerHelper),
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/server_poc/src/utils/json.py", line 7, in default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2022-11-24 02:13:38,676 - INFO - 172.25.0.1 [24/Nov/2022:02:13:38 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:13:39,601 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.Response(text=json.dumps(posts, cls=JsonSerializerHelper),
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/server_poc/src/utils/json.py", line 7, in default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2022-11-24 02:13:39,601 - INFO - 172.25.0.1 [24/Nov/2022:02:13:39 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:13:40,125 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.Response(text=json.dumps(posts, cls=JsonSerializerHelper),
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/server_poc/src/utils/json.py", line 7, in default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2022-11-24 02:13:40,126 - INFO - 172.25.0.1 [24/Nov/2022:02:13:40 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:13:40,601 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 46, in list
+    return web.Response(text=json.dumps(posts, cls=JsonSerializerHelper),
+  File "/usr/local/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/server_poc/src/utils/json.py", line 7, in default
+    if isinstance(obj, datetime):
+TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union
+2022-11-24 02:13:40,602 - INFO - 172.25.0.1 [24/Nov/2022:02:13:40 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:20:26,247 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:20:33,804 - INFO - 172.25.0.1 [24/Nov/2022:02:20:33 +0000] "GET /post HTTP/1.1" 200 843 "-" "insomnia/2021.5.3"
+2022-11-24 02:25:31,271 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:26:09,565 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:26:25,826 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1463, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 239, in execute
+    await self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 457, in _query
+    await conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 672, in _read_query_result
+    await result.read()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 't1.id' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 44, in list
+    posts = await PostModel.manege.execute(PostModel.select(PostModel.user.id))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 432, in execute
+    return (await coroutine(query))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 580, in select
+    return await _execute_with_returning(query)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 564, in _execute_with_returning
+    cursor = await _execute_query_async(query)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1480, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1459, in _run_sql
+    with peewee.__exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1463, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 239, in execute
+    await self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 457, in _query
+    await conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 672, in _read_query_result
+    await result.read()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.OperationalError: (1054, "Unknown column 't1.id' in 'field list'")
+2022-11-24 02:26:25,828 - INFO - 172.25.0.1 [24/Nov/2022:02:26:25 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:26:27,089 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1463, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 239, in execute
+    await self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 457, in _query
+    await conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 672, in _read_query_result
+    await result.read()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 't1.id' in 'field list'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 44, in list
+    posts = await PostModel.manege.execute(PostModel.select(PostModel.user.id))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 272, in execute
+    return (await execute(query))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 432, in execute
+    return (await coroutine(query))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 580, in select
+    return await _execute_with_returning(query)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 564, in _execute_with_returning
+    cursor = await _execute_query_async(query)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1480, in _execute_query_async
+    return (await _run_sql(database, *query.sql()))
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1459, in _run_sql
+    with peewee.__exception_wrapper__:
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3010, in __exit__
+    reraise(new_type, new_type(exc_value, *exc_args), traceback)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 192, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 1463, in _run_sql
+    await cursor.execute(operation, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 239, in execute
+    await self._query(query)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/cursors.py", line 457, in _query
+    await conn.query(q)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 672, in _read_query_result
+    await result.read()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "/usr/local/lib/python3.10/site-packages/aiomysql/connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.10/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.10/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+peewee.OperationalError: (1054, "Unknown column 't1.id' in 'field list'")
+2022-11-24 02:26:27,090 - INFO - 172.25.0.1 [24/Nov/2022:02:26:27 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:27:25,881 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:31:07,940 - INFO - 172.25.0.1 [24/Nov/2022:02:31:07 +0000] "GET /post HTTP/1.1" 200 843 "-" "insomnia/2021.5.3"
+2022-11-24 02:32:49,376 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:32:53,824 - INFO - 172.25.0.1 [24/Nov/2022:02:32:53 +0000] "GET /post HTTP/1.1" 200 805 "-" "insomnia/2021.5.3"
+2022-11-24 02:35:19,049 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:35:36,253 - INFO - 172.25.0.1 [24/Nov/2022:02:35:36 +0000] "GET /post/spam HTTP/1.1" 200 159 "-" "insomnia/2021.5.3"
+2022-11-24 02:36:26,374 - INFO - 172.25.0.1 [24/Nov/2022:02:36:26 +0000] "GET /post/spam HTTP/1.1" 200 479 "-" "insomnia/2021.5.3"
+2022-11-24 02:36:49,197 - INFO - 172.25.0.1 [24/Nov/2022:02:36:49 +0000] "GET /post HTTP/1.1" 200 804 "-" "insomnia/2021.5.3"
+2022-11-24 02:36:51,396 - INFO - 172.25.0.1 [24/Nov/2022:02:36:51 +0000] "GET /post/spam HTTP/1.1" 200 479 "-" "insomnia/2021.5.3"
+2022-11-24 02:38:10,598 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:38:14,282 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 47, in list
+    del post['user']['password']
+TypeError: 'NoneType' object does not support item deletion
+2022-11-24 02:38:14,282 - INFO - 172.25.0.1 [24/Nov/2022:02:38:14 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:38:15,793 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 47, in list
+    del post['user']['password']
+TypeError: 'NoneType' object does not support item deletion
+2022-11-24 02:38:15,794 - INFO - 172.25.0.1 [24/Nov/2022:02:38:15 +0000] "GET /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 02:39:07,450 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 02:39:13,124 - INFO - 172.25.0.1 [24/Nov/2022:02:39:13 +0000] "GET /post HTTP/1.1" 200 484 "-" "insomnia/2021.5.3"
+2022-11-24 02:39:15,987 - INFO - 172.25.0.1 [24/Nov/2022:02:39:15 +0000] "GET /post/spam HTTP/1.1" 200 479 "-" "insomnia/2021.5.3"
+2022-11-24 12:45:41,528 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:46:10,491 - INFO - 172.25.0.1 [24/Nov/2022:12:46:10 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:47:59,175 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:48:07,706 - INFO - 172.25.0.1 [24/Nov/2022:12:48:07 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:49:06,774 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:49:08,767 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 20, in login
+    user = await self.service.login(data)
+AttributeError: 'User' object has no attribute 'service'
+2022-11-24 12:49:08,768 - INFO - 172.25.0.1 [24/Nov/2022:12:49:08 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 12:51:37,297 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:52:15,163 - INFO - 172.25.0.1 [24/Nov/2022:12:52:15 +0000] "POST /login HTTP/1.1" 200 261 "-" "insomnia/2021.5.3"
+2022-11-24 12:54:12,795 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:54:18,962 - INFO - 172.25.0.1 [24/Nov/2022:12:54:18 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:54:20,370 - INFO - 172.25.0.1 [24/Nov/2022:12:54:20 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:54:21,090 - INFO - 172.25.0.1 [24/Nov/2022:12:54:21 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:54:21,729 - INFO - 172.25.0.1 [24/Nov/2022:12:54:21 +0000] "POST /login HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 12:55:40,126 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:55:46,743 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/user.py", line 20, in login
+    user = await UserService.login(data)
+TypeError: User.login() missing 1 required positional argument: 'data'
+2022-11-24 12:55:46,744 - INFO - 172.25.0.1 [24/Nov/2022:12:55:46 +0000] "POST /login HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 12:56:58,744 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 12:57:01,245 - INFO - 172.25.0.1 [24/Nov/2022:12:57:01 +0000] "POST /login HTTP/1.1" 200 261 "-" "insomnia/2021.5.3"
+2022-11-24 12:57:13,469 - INFO - 172.25.0.1 [24/Nov/2022:12:57:13 +0000] "POST /login HTTP/1.1" 401 179 "-" "insomnia/2021.5.3"
+2022-11-24 12:57:17,076 - INFO - 172.25.0.1 [24/Nov/2022:12:57:17 +0000] "POST /login HTTP/1.1" 200 261 "-" "insomnia/2021.5.3"
+2022-11-24 12:57:45,334 - INFO - 172.25.0.1 [24/Nov/2022:12:57:45 +0000] "POST /user HTTP/1.1" 201 237 "-" "insomnia/2021.5.3"
+2022-11-24 13:22:44,898 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 13:23:12,100 - INFO - 172.25.0.1 [24/Nov/2022:13:23:12 +0000] "GET /post HTTP/1.1" 200 484 "-" "insomnia/2021.5.3"
+2022-11-24 13:23:14,537 - INFO - 172.25.0.1 [24/Nov/2022:13:23:14 +0000] "GET /post/spam HTTP/1.1" 200 479 "-" "insomnia/2021.5.3"
+2022-11-24 13:23:28,897 - INFO - 172.25.0.1 [24/Nov/2022:13:23:28 +0000] "POST /post HTTP/1.1" 201 307 "-" "insomnia/2021.5.3"
+2022-11-24 14:14:26,950 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:14:51,295 - INFO - 172.25.0.1 [24/Nov/2022:14:14:51 +0000] "POST /post HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 14:15:55,407 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:16:11,410 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 20, in create
+    return web.json_response(data, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type coroutine is not JSON serializable
+2022-11-24 14:16:11,411 - INFO - 172.25.0.1 [24/Nov/2022:14:16:11 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:17:33,738 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:17:38,947 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 29, in create
+    post.save()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 6742, in save
+    pk = self.insert(**field_dict).execute()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1962, in inner
+    return method(self, database, *args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2033, in execute
+    return self._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2838, in _execute
+    return super(Insert, self)._execute(database)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2551, in _execute
+    cursor = database.execute(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 3249, in execute
+    sql, params = ctx.sql(query).query()
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 628, in sql
+    return obj.__sql__(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2815, in __sql__
+    self._simple_insert(ctx)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2665, in _simple_insert
+    return self._generate_insert((self._insert,), ctx)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 2787, in _generate_insert
+    return ctx.sql(CommaNodeList(all_values))
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 628, in sql
+    return obj.__sql__(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1828, in __sql__
+    ctx.sql(self.nodes[n_nodes - 1])
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 628, in sql
+    return obj.__sql__(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1826, in __sql__
+    ctx.sql(self.nodes[i])
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 628, in sql
+    return obj.__sql__(self)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 1426, in __sql__
+    return ctx.value(self.value, self.converter)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 640, in value
+    value = converter(value)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 5372, in db_value
+    return self.rel_field.db_value(value)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4699, in db_value
+    return value if value is None else self.adapt(value)
+  File "/usr/local/lib/python3.10/site-packages/peewee.py", line 4759, in adapt
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'AsyncQueryWrapper'
+2022-11-24 14:17:38,948 - INFO - 172.25.0.1 [24/Nov/2022:14:17:38 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:27:02,054 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:27:33,837 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 183, in get
+    return list(result)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 24, in create
+    user = await UserModel.manege.get(UserModel, id == user_id)
+  File "/usr/local/lib/python3.10/site-packages/peewee_async.py", line 185, in get
+    raise model.DoesNotExist
+models.user.UserDoesNotExist
+2022-11-24 14:27:33,839 - INFO - 172.25.0.1 [24/Nov/2022:14:27:33 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:28:59,533 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:29:07,532 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 20, in create
+    return web.json_response(data, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+2022-11-24 14:29:07,533 - INFO - 172.25.0.1 [24/Nov/2022:14:29:07 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:33:15,170 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:33:23,923 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 20, in create
+    return web.json_response(data, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+2022-11-24 14:33:23,924 - INFO - 172.25.0.1 [24/Nov/2022:14:33:23 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:33:25,340 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 20, in create
+    return web.json_response(data, status=201)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 817, in json_response
+    text = dumps(data)
+  File "/usr/local/lib/python3.10/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.10/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+2022-11-24 14:33:25,341 - INFO - 172.25.0.1 [24/Nov/2022:14:33:25 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:36:50,110 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:37:09,753 - INFO - 172.25.0.1 [24/Nov/2022:14:37:09 +0000] "POST /post HTTP/1.1" 201 315 "-" "insomnia/2021.5.3"
+2022-11-24 14:44:24,662 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:44:29,900 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 32, in create
+    raise SpamException('Sua mensagem é um spam!!!')
+services.post.SpamException: Sua mensagem é um spam!!!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 22, in create
+    return web.HTTPForbidden(body={'error': error}, text=error)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_exceptions.py", line 99, in __init__
+    Response.__init__(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 589, in __init__
+    raise ValueError("body and text are not allowed together")
+ValueError: body and text are not allowed together
+2022-11-24 14:44:29,901 - INFO - 172.25.0.1 [24/Nov/2022:14:44:29 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:47:19,347 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:48:53,852 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 32, in create
+    raise SpamException('Sua mensagem é um spam!!!')
+services.post.SpamException: Sua mensagem é um spam!!!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 22, in create
+    return web.HTTPForbidden(body={'error': str(error)}, text=str(error))
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_exceptions.py", line 99, in __init__
+    Response.__init__(
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_response.py", line 589, in __init__
+    raise ValueError("body and text are not allowed together")
+ValueError: body and text are not allowed together
+2022-11-24 14:48:53,852 - INFO - 172.25.0.1 [24/Nov/2022:14:48:53 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 14:50:36,630 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 14:51:12,143 - INFO - 172.25.0.1 [24/Nov/2022:14:51:12 +0000] "POST /post HTTP/1.1" 403 185 "-" "insomnia/2021.5.3"
+2022-11-24 14:51:36,864 - INFO - 172.25.0.1 [24/Nov/2022:14:51:36 +0000] "POST /post HTTP/1.1" 403 185 "-" "insomnia/2021.5.3"
+2022-11-24 14:51:57,102 - INFO - 172.25.0.1 [24/Nov/2022:14:51:57 +0000] "POST /post HTTP/1.1" 403 185 "-" "insomnia/2021.5.3"
+2022-11-24 14:54:34,789 - INFO - 172.25.0.1 [24/Nov/2022:14:54:34 +0000] "POST /post HTTP/1.1" 403 185 "-" "insomnia/2021.5.3"
+2022-11-24 15:23:31,394 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:24:02,568 - INFO - 172.25.0.1 [24/Nov/2022:15:24:02 +0000] "POST /user HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 15:26:44,637 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:27:55,476 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:28:05,048 - INFO - 172.25.0.1 [24/Nov/2022:15:28:05 +0000] "POST /user HTTP/1.1" 201 252 "-" "insomnia/2021.5.3"
+2022-11-24 15:29:01,669 - INFO - 172.25.0.1 [24/Nov/2022:15:29:01 +0000] "POST /user HTTP/1.1" 201 237 "-" "insomnia/2021.5.3"
+2022-11-24 15:29:44,006 - INFO - 172.25.0.1 [24/Nov/2022:15:29:44 +0000] "POST /user HTTP/1.1" 201 237 "-" "insomnia/2021.5.3"
+2022-11-24 15:30:54,990 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:31:06,505 - INFO - 172.25.0.1 [24/Nov/2022:15:31:06 +0000] "POST /user HTTP/1.1" 201 237 "-" "insomnia/2021.5.3"
+2022-11-24 15:32:44,665 - INFO - 172.25.0.1 [24/Nov/2022:15:31:53 +0000] "POST /post HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 15:33:42,816 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:33:53,552 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 32, in create
+    raise SpamException('Sua mensagem é um spam!!!')
+services.post.SpamException: Sua mensagem é um spam!!!
+2022-11-24 15:33:53,553 - INFO - 172.25.0.1 [24/Nov/2022:15:33:53 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 15:34:12,486 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 18, in create
+    data = await PostService.create(data=data, user_agent=user_agent, user_ip=user_ip)
+  File "/server_poc/src/services/post.py", line 32, in create
+    raise SpamException('Sua mensagem é um spam!!!')
+services.post.SpamException: Sua mensagem é um spam!!!
+2022-11-24 15:34:12,487 - INFO - 172.25.0.1 [24/Nov/2022:15:34:12 +0000] "POST /post HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 15:35:51,934 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:35:57,325 - INFO - 172.25.0.1 [24/Nov/2022:15:35:55 +0000] "POST /post HTTP/1.1" 201 399 "-" "insomnia/2021.5.3"
+2022-11-24 15:36:52,451 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 15:37:44,094 - INFO - 172.25.0.1 [24/Nov/2022:15:37:42 +0000] "POST /post HTTP/1.1" 403 185 "-" "insomnia/2021.5.3"
+2022-11-24 15:38:17,557 - INFO - 172.25.0.1 [24/Nov/2022:15:38:16 +0000] "POST /post HTTP/1.1" 201 341 "-" "insomnia/2021.5.3"
+2022-11-24 15:54:19,084 - INFO - 172.25.0.1 [24/Nov/2022:15:54:19 +0000] "POST /user HTTP/1.1" 201 239 "-" "insomnia/2021.5.3"
+2022-11-24 15:55:01,815 - INFO - 172.25.0.1 [24/Nov/2022:15:55:00 +0000] "POST /post HTTP/1.1" 201 290 "-" "insomnia/2021.5.3"
+2022-11-24 16:00:43,731 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 16:02:27,766 - INFO - 172.25.0.1 [24/Nov/2022:16:02:26 +0000] "POST /post/add_spam HTTP/1.1" 400 177 "-" "insomnia/2021.5.3"
+2022-11-24 16:03:44,376 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 16:04:00,632 - ERROR - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_protocol.py", line 433, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.10/site-packages/aiohttp/web_app.py", line 504, in _handle
+    resp = await handler(request)
+  File "/server_poc/src/resources/post.py", line 43, in add_spam
+    await PostService.add_spam(data)
+  File "/server_poc/src/services/post.py", line 68, in add_spam
+    await PostModel.update_object(post)
+AttributeError: type object 'Post' has no attribute 'update_object'
+2022-11-24 16:04:00,634 - INFO - 172.25.0.1 [24/Nov/2022:16:03:59 +0000] "POST /post/add_spam HTTP/1.1" 500 245 "-" "insomnia/2021.5.3"
+2022-11-24 16:12:04,679 - INFO - Iniciando Servidor 0.0.0.0:8180
+2022-11-24 16:12:09,817 - INFO - 172.25.0.1 [24/Nov/2022:16:12:08 +0000] "POST /post/add_spam HTTP/1.1" 200 172 "-" "insomnia/2021.5.3"
+2022-11-24 16:12:24,153 - INFO - 172.25.0.1 [24/Nov/2022:16:12:24 +0000] "GET /post/spam HTTP/1.1" 200 1688 "-" "insomnia/2021.5.3"
+2022-11-24 16:12:55,314 - INFO - 172.25.0.1 [24/Nov/2022:16:12:52 +0000] "POST /post/remove_spam HTTP/1.1" 200 172 "-" "insomnia/2021.5.3"

@@ -1,0 +1,31 @@
+version: '3.3'
+# QA
+services:
+  db_poc:
+      image: mysql:5.7
+      container_name: db_poc
+      hostname: db_poc
+      environment:
+        MYSQL_DATABASE: poc
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_USER: user
+        MYSQL_PASSWORD: user
+      volumes:
+        - mysql-data:/var/lib/mysql
+        - ./db/init:/docker-entrypoint-initdb.d
+      ports:
+        - 3333:3306
+  server_poc:
+    build: ./server
+    container_name: server_poc
+    image: server_poc
+    # restart: on-failure
+    env_file:
+      - .env
+    volumes:
+      - ./server:/server_poc
+    ports:
+      - 8180:8180
+    command: python src/main.py 0.0.0.0 8180
+volumes:
+  mysql-data:
